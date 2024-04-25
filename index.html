@@ -233,13 +233,13 @@
                                                 <a class="dropdown-item d-sm-none text-nowrap" href="https://www.salvagereseller.com/copart-salvage-cars">
                                                    Search by Make                                
                                                 </a>
-                                                <a class="d-none d-sm-flex justify-content-between align-items-center dropdown-item dropdown-toggle text-nowrap" href="https://www.salvagereseller.com/copart-salvage-cars" role="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                                                <a class="d-none d-sm-flex justify-content-between align-items-center dropdown-item dropdown-toggle text-nowrap" href="https://www.salvagereseller.com/copart-salvage-cars" role="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" id="ex-sub-search-2">
                                                    <span class="ml-xl-n3 d-inline-flex justify-content-start align-items-center">
                                                        <i class="lar la-bookmark display-6 d-none d-xl-block"></i>  
                                                        <span class="ml-2">Search by Make</span>
                                                    </span>
                                                 </a>
-                                                <div class="dropdown-menu dropdown-sub-menu px-3 py-2" style="top: -51.25px;">
+                                                <div class="dropdown-menu dropdown-sub-menu px-3 py-2" id="ex-sub-search-menu-2">
                                                    <div class="d-flex justify-content-between align-items-center py-2">
                                                       <h4 class="text-black-50">Makes</h4>
                                                       <a class="d-inline-block my-1 btn btn-sm btn-blue px-2 py-0 display-10" href="https://www.salvagereseller.com/copart-salvage-cars">View All</a>
@@ -272,41 +272,82 @@
                 var isHovering = false;
 
                 // Function to show the menu
-                function showMenu() {
+                function showMenu(element, element2) {
                     clearTimeout(hoverTimer); // Clear any existing timer
-                    $("#ex-sub-search-menu").css("display", "block");
-                    $("#ex-sub-search-menu").css("top", "-1px");
+
+                    document.querySelectorAll('.dropdown-toggle.text-nowrap').forEach(function(ele) {
+                        var id_toggle_1 = ele.id;
+                        var id_toggle_menu_1 = $(ele).next('.dropdown-sub-menu')[0].id;
+
+                        $("#" + id_toggle_menu_1).css("display", "none");
+                        $("#" + id_toggle_menu_1).css("top", "-1px");
+                    });
+
+
+
+                    var bottomOfElement1 = $('.top-navigation').offset().top - $('#' + element2).offset().top + 31.5;
+
+                    $("#" + element).css("display", "block");
+                    $("#" + element).css("top", bottomOfElement1 + 'px');
                     isHovering = true;  // Set hovering flag
                 }
 
                 // Function to attempt hiding the menu
-                function attemptHideMenu() {
+                function attemptHideMenu(element) {
                     if (!isHovering) {  // Only hide if not hovering
-                        $("#ex-sub-search-menu").css("display", "none");
-                        $("#ex-sub-search-menu").css("top", "-1px");
+                        $("#" + element).css("display", "none");
+                        $("#" + element).css("top", "-1px");
                     }
                 }
 
                 // Function to set up hiding with delay
-                function hideMenu() {
+                function hideMenu(element) {
                     isHovering = false; // Reset hovering flag
-                    hoverTimer = setTimeout(attemptHideMenu, 300); // Set delay before hiding
+                    hoverTimer = setTimeout(attemptHideMenu(element), 300); // Set delay before hiding
                 }
 
-                // Mouse enter events
-                $("#ex-sub-search, #ex-sub-search-menu").mouseenter(showMenu);
 
-                // Mouse leave events
-                $("#ex-sub-search, #ex-sub-search-menu").mouseleave(function() {
-                    // Delay hide, allow re-entry to cancel hide
-                    hoverTimer = setTimeout(function() {
-                        isHovering = false;  // Update flag after delay
-                        attemptHideMenu();  // Attempt to hide the menu
-                    }, 300);
-                });
+                document.querySelectorAll('.dropdown-toggle.text-nowrap').forEach(function(ele) {
+                    
+                    var id_toggle = ele.id;
+                    var id_toggle_menu = $(ele).next('.dropdown-sub-menu')[0].id;
+
+
+
+                    // Mouse enter events
+                    $("#" + id_toggle + "," + " #" + id_toggle_menu).on("mouseenter", function() {
+                        showMenu(id_toggle_menu, id_toggle);
+                    });
+
+                    // Mouse leave events
+                    $("#" + id_toggle + "," + " #" + id_toggle_menu).on("mouseleave", function() {
+                        // Delay hide, allow re-entry to cancel hide
+
+                        hoverTimer = setTimeout(function() {
+                            isHovering = false;  // Update flag after delay
+                            attemptHideMenu(id_toggle_menu);  // Attempt to hide the menu
+                        }, 200);
+                    });
+
+                })
+
+                // Mouse enter events
+                // $("#ex-sub-search, #ex-sub-search-menu").mouseenter(showMenu);
+
+                // // Mouse leave events
+                // $("#ex-sub-search, #ex-sub-search-menu").mouseleave(function() {
+                //     // Delay hide, allow re-entry to cancel hide
+                //     hoverTimer = setTimeout(function() {
+                //         isHovering = false;  // Update flag after delay
+                //         attemptHideMenu();  // Attempt to hide the menu
+                //     }, 200);
+                // });
+
             });
 
         </script>
+
+
         
     </body>
 </html>
