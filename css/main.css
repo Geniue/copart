@@ -1,0 +1,16 @@
+#vehicle-types .icon {
+    background-image: url(../images/vehicle-types.png);
+    background-repeat: no-repeat;
+    background-size: 60px 715px;
+    height: 32px;
+    width: 60px;
+    display: inline-block;
+}
+#quick-picks .icon {
+    background-image: url(../images/quick-picks.png);
+    background-repeat: no-repeat;
+    background-size: 40px 812px;
+    height: 30px;
+    width: 45px;
+    display: inline-block;
+}
