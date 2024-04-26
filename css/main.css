@@ -18,4 +18,10 @@
     background-color: #115cb7;
     background-image: url(../images/home-bg.webp);
     background-size: cover;
+    height: 591.6px !important;
+}
+@media (max-width: 1800px) {
+    .home-banner {
+        height: 600px;
+    }
 }
