@@ -25,3 +25,16 @@
         height: 600px;
     }
 }
+.how-it-works .bg-box {
+    background-image: url(../images/how-it-works-box.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0 1.75rem 1.85rem 1.75rem;
+}
+.features .icon {
+    width: 55px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-image: url(../images/registration-icons.png);
+    background-size: 100%;
+}
