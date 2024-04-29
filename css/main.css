@@ -46,3 +46,11 @@
     background-position: left center;
     min-height: 315px;
 }
+.pswp__scroll-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
