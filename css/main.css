@@ -41,3 +41,8 @@
 .w-100 {
     width: 100% !important;
 }
+.search-index .content-top .bg-cover {
+    background-image: url(../images/advanced-search-top-bg.webp);
+    background-position: left center;
+    min-height: 315px;
+}
