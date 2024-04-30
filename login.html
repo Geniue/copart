@@ -10,48 +10,6 @@
 
     </head>
 <body aria-live="polite" aria-atomic="true" class="d-flex flex-column align-items-end h-100 login">
-   <script>
-      /**
-       * By placing this code on your website, you authorize CarGurus to access
-       * and use website visitor data to optimize digital advertising performance.
-       */
-      ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
-      p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
-      };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
-      n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d3j1weegxvu8ns.cloudfront.net/t.js","snowplow"));
-      
-      window.snowplow('newTracker', 'cgtracker', 'sp.cargurus.com', {
-        appId: 452447,
-        discoverRootDomain: true,
-        forceSecureTracker: true,
-        contexts: {
-          webPage: true,
-          performanceTiming: true
-        }
-      });
-      window.snowplow('enableActivityTracking', 5, 5);
-      window.snowplow('trackPageView');
-      window.snowplow('enableLinkClickTracking');
-      var CarGurus = window.CarGurus || {}; window.CarGurus = CarGurus;
-      CarGurus.Partner = window.CarGurus.Partner || {};
-      CarGurus.Partner.Metrics = window.CarGurus.Partner.Metrics || {};
-      CarGurus.Partner.Metrics.Options = window.CarGurus.Partner.Metrics.Options || {};
-      CarGurus.Partner.Metrics.Options.AccessKey = "00000000-0000-2008-0000-00000006e75f";
-      CarGurus.Partner.Metrics.Options.debug = false;
-      (function() {
-        var script = document.createElement('script');
-        script.src = "https://static.cargurus.com/js/api/en_US/2.0/partnermetrics.js";
-        script.async = true;
-        var entry = document.getElementsByTagName('script')[0];
-        entry.parentNode.insertBefore(script, entry);
-      })();
-   </script>
-   <noscript>
-      <div style="display:inline;">
-         <img height="1" width="1" style="border-style:none;" alt=""
-            src="https://www.cargurus.com/Cars/api/2.0/recordMetricsImage.action?k=00000000-0000-2008-0000-00000006e75f&x=%7B%22ns%22%3A1%7D">
-      </div>
-   </noscript>
    <div id="content" class="w-100 h-100 login-index english">
       <div class="row m-0 w-100 h-100">
          <div class="order-1 order-md-0 col-12 col-md-5 col-lg-4 px-0 col-login-descripton d-flex justify-content-center align-items-md-center">
@@ -81,22 +39,7 @@
                            <div class="input-group-append">
                               <span class="input-group-text py-0"><a href="" class="d-flex align-content-center text-decoration-none"><i class="la la-eye-slash text-secondary display-7" aria-hidden="true"></i></a></span>
                            </div>
-                        </div>
-                        <script type="text/javascript">
-                           $(function() {
-                               $("#show-hide-password a").on('click', function(event) {
-                                   event.preventDefault();
-                                   if($('#show-hide-password input').attr('type') == "text"){
-                                       $('#show-hide-password input').attr('type', 'password');
-                                       $('#show-hide-password i').addClass( "la-eye-slash" ).removeClass( "la-eye" );
-                                   }else if($('#show-hide-password input').attr('type') == "password"){
-                                       $('#show-hide-password input').attr('type', 'text');
-                                       $('#show-hide-password i').removeClass( "la-eye-slash" ).addClass( "la-eye" );
-                                   }
-                               });
-                           });
-                           
-                        </script>                    
+                        </div>                
                      </div>
                      <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
                      <div class="g-recaptcha" id="g-recaptcha" data-sitekey="6Ld4ynMaAAAAACWLC-fX9FjQINLTTUA539MN8CmL" data-badge="bottomleft" data-size="invisible" data-callback="captchaResponse">
@@ -133,9 +76,6 @@
    <div id="loading">
       <img src="https://www.salvagereseller.com/images/loader.gif" alt="Loading...">
    </div>
-   <script type="application/ld+json">
-      {"@context":"http:\/\/schema.org","@type":"Organization","address":{"@type":"PostalAddress","addressCountry":"USA","addressLocality":"Coconut Creek","addressRegion":"Florida","streetAddress":"4811 Lyons Technology Parkway, Suite 9","postalCode":"33073"},"email":"info@salvagereseller.com","name":"Inloher Corp.","telephone":"1 (954) 671-0160","sameAs":{"twitter":"https:\/\/twitter.com\/#\/salvagereseller","facebook":"https:\/\/www.facebook.com\/CopartRegisteredBroker","linkedin":"https:\/\/www.linkedin.com\/company\/inloher-corp-","instagram":"https:\/\/www.instagram.com\/salvage_reseller","youtube":"https:\/\/www.youtube.com\/channel\/UCLfaq6HRDKgiHX8hzcPCoiw"}}        
-   </script>
    <span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span>
    <div style="visibility: hidden; position: absolute; width: 100%; top: -10000px; left: 0px; right: 0px; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0;">
       <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.5;"></div>
