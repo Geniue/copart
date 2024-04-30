@@ -846,3 +846,66 @@ button.swiper-pagination-bullet {
 .fade {
     transition: opacity .15s linear;
 }
+.col-login-form {
+    background-color: #249953;
+}
+.col-login-form>div {
+    max-width: 390px;
+}
+.col-login-form .btn-social {
+    padding: .25rem .75rem;
+}
+.btn-google {
+    background-color: #dc4437;
+}
+.btn-social {
+    position: relative;
+    padding-left: 50px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff !important;
+    border-color: rgba(0, 0, 0, .2) !important;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.col-login-form .btn-social {
+    padding: .25rem .75rem;
+}
+.btn-facebook {
+    background-color: #2c67c5;
+}
+.col-login-form .btn-social>:first-child {
+    line-height: 29px;
+    font-size: 1.5em;
+    width: 30px;
+}
+.btn-social>:first-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    line-height: 40px;
+    font-size: 2em;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, .2);
+    padding-right: 2px;
+    width: 46px;
+}
+.mr-2, .mx-2 {
+    margin-right: .5rem !important;
+}
+.mt-4, .my-4 {
+    margin-top: 1.5rem !important;
+}
+
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+.justify-content-between {
+    justify-content: space-evenly !important;
+
+}
