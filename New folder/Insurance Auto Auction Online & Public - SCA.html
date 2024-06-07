@@ -4131,12 +4131,13 @@
             </div>
          </div>
       </footer>
-      <button class="btn-reset back-to-top" type="button" aria-label="Go to the top of the page" fdprocessedid="1dkc">
-         <svg width="24" height="24" aria-hidden="true" focusable="false">
-            <use xlink:href="/img/sprite_auto.svg#scroll-up-icon"></use>
-         </svg>
+     <button id="backToTopBtn" class="btn-reset back-to-top back-to-top--show" type="button" aria-label="Go to the top of the page">
+          <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+              <path d="M12 2l-10 10h6v10h8v-10h6l-10-10z"/>
+          </svg>
       </button>
-      <div class="cookies active">
+
+      <!-- <div class="cookies active">
          <div class="container-v2">
             <div class="cookies__text-wrap">
                <p class="cookies__text">We use cookies to analyse &amp; personalise content</p>
@@ -4154,7 +4155,7 @@
                <button class="btn-reset btn-v2 btn-v2--brand cookies__accept cookie_save" type="button" fdprocessedid="hsf6tb">Got It</button>
             </div>
          </div>
-      </div>
+      </div> -->
       <section class="modal-v2 modal-v2--cookies cookies-modal">
          <div class="modal-v2__wrap">
             <div class="modal-v2__content" role="dialog" aria-modal="true">
@@ -4317,12 +4318,33 @@
     });
 
 </script>
-   <script>
-     function toggleDropdown() {
-       var dropdownContent = document.getElementById("footerLangContent");
-       dropdownContent.classList.toggle("show");
-     }
-   </script>
+   <script type="text/javascript">
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        var backToTopBtn = document.getElementById("backToTopBtn");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopBtn.classList.add("back-to-top--show");
+        } else {
+            backToTopBtn.classList.remove("back-to-top--show");
+        }
+    }
+
+    // وظيفة للتمرير إلى الأعلى عند الضغط على الزر
+    document.getElementById("backToTopBtn").onclick = function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+</script>
+
+ 
+
+
+
 
 
 

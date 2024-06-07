@@ -136,3 +136,32 @@ span.nav-v2__link-sub {
 .dropdown-v2__content.show {
   display: block; 
 }
+
+.btn-reset .back-to-top .back-to-top--show{
+
+    transform: translateY(0);
+    opacity: 1;
+
+}
+.btn-reset .back-to-top .back-to-top--show {
+
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 2010;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    transform: translateY(100px);
+    opacity: 0;
+    background-color: var(--dark-silver);
+    border-radius: 50%;
+    transition: transform .5s,opacity .3s,background-color .3s ease;
+
+}
+.btn-reset .back-to-top .back-to-top--show {
+    opacity: 1;
+    transform: translateY(0);
+}
