@@ -225,3 +225,26 @@ html.bx-ios.bx-ios-fix-frame-focus,.bx-ios.bx-ios-fix-frame-focus body{-webkit-o
         font-style: normal;
         font-display: swap;
       }
+      @media (max-width: 575.98px) {
+          .header .navbar-collapse {
+              border: 1px solid #ccc;
+              background-color: #fff;
+              position: fixed;
+              top: 0;
+              right: 0;
+              z-index: 9999999;
+              width: 89%;
+              height: 100%;
+              overflow-x: hidden;
+              overflow-y: auto;
+              max-width: 400px;
+          }
+}
+.navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+}
