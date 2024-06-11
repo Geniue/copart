@@ -1,5 +1,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
    <head>
+      <script type="text/javascript" src="https://www.salvagereseller.com/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+      <script src="https://www.salvagereseller.com/blog/wp-includes/js/wp-emoji-release.min.js?ver=6.5.4" defer=""></script>
+
+
+
       <title>  How to Find the Best Deals on Bank Auction Cars</title>
       <link rel="stylesheet" type="text/css" href="./css/line-awesome.min.css">
       <link rel="stylesheet" type="text/css" href="./css/blog_index.css">
@@ -1345,6 +1350,20 @@
           })
       });
       
+   </script>
+   <script>
+      $(document).ready(function() {
+        $('.elementskit-card-header a').click(function(e) {
+          e.preventDefault();
+          var $this = $(this);
+
+          $this.closest('.elementskit-card-header').toggleClass('active');
+          $($this.data('target')).slideToggle();
+
+          $this.find('.ekit_accordion_normal_icon').toggle();
+          $this.find('.ekit_accordion_active_icon').toggle();
+        });
+      });
    </script>
 </body>
 </html>
