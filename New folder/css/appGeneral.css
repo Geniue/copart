@@ -165,3 +165,10 @@ span.nav-v2__link-sub {
     opacity: 1;
     transform: translateY(0);
 }
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}

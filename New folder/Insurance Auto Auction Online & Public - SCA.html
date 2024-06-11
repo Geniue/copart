@@ -1,7 +1,6 @@
 <head>
    <meta charset="UTF-8">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="format-detection" content="telephone=no">
@@ -28,177 +27,174 @@
    <meta property="og:image" content="https://sca.auction/img/sca_logo.png">
    <meta property="og:site_name" content="SCA Auction">
    <meta property="og:description" content="164 locations nationwide with more than 300,000 salvage and clean title vehicles in stock featuring over 150 weekly live auctions open to the public. FREE Registration - join &amp; bid today">
-
    <style id="intercom-lightweight-app-style" type="text/css">
-         @keyframes intercom-lightweight-app-launcher {
-         from {
-         opacity: 0;
-         transform: scale(0.5);
-         }
-         to {
-         opacity: 1;
-         transform: scale(1);
-         }
-         }
-         @keyframes intercom-lightweight-app-gradient {
-         from {
-         opacity: 0;
-         }
-         to {
-         opacity: 1;
-         }
-         }
-         @keyframes intercom-lightweight-app-messenger {
-         0% {
-         opacity: 0;
-         transform: scale(0);
-         }
-         40% {
-         opacity: 1;
-         }
-         100% {
-         transform: scale(1);
-         }
-         }
-         .intercom-lightweight-app {
-         position: fixed;
-         z-index: 2147483001;
-         width: 0;
-         height: 0;
-         font-family: intercom-font, "Helvetica Neue", "Apple Color Emoji", Helvetica, Arial, sans-serif;
-         }
-         .intercom-lightweight-app-gradient {
-         position: fixed;
-         z-index: 2147483002;
-         width: 500px;
-         height: 500px;
-         bottom: 0;
-         right: 0;
-         pointer-events: none;
-         background: radial-gradient(
-         ellipse at bottom right,
-         rgba(29, 39, 54, 0.16) 0%,
-         rgba(29, 39, 54, 0) 72%);
-         animation: intercom-lightweight-app-gradient 200ms ease-out;
-         }
-         .intercom-lightweight-app-launcher {
-         position: fixed;
-         z-index: 2147483003;
-         padding: 0 !important;
-         margin: 0 !important;
-         border: none;
-         bottom: 20px;
-         right: 20px;
-         max-width: 48px;
-         width: 48px;
-         max-height: 48px;
-         height: 48px;
-         border-radius: 50%;
-         background: #980105;
-         cursor: pointer;
-         box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 32px 0 rgba(0, 0, 0, 0.16);
-         transition: transform 167ms cubic-bezier(0.33, 0.00, 0.00, 1.00);
-         box-sizing: content-box;
-         }
-         .intercom-lightweight-app-launcher:hover {
-         transition: transform 250ms cubic-bezier(0.33, 0.00, 0.00, 1.00);
-         transform: scale(1.1)
-         }
-         .intercom-lightweight-app-launcher:active {
-         transform: scale(0.85);
-         transition: transform 134ms cubic-bezier(0.45, 0, 0.2, 1);
-         }
-         .intercom-lightweight-app-launcher:focus {
-         outline: none;
-         }
-         .intercom-lightweight-app-launcher-icon {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 48px;
-         height: 48px;
-         transition: transform 100ms linear, opacity 80ms linear;
-         }
-         .intercom-lightweight-app-launcher-icon-open {
-         opacity: 1;
-         transform: rotate(0deg) scale(1);
-         }
-         .intercom-lightweight-app-launcher-icon-open svg {
-         width: 24px;
-         height: 24px;
-         }
-         .intercom-lightweight-app-launcher-icon-open svg path {
-         fill: rgb(255, 255, 255);
-         }
-         .intercom-lightweight-app-launcher-icon-self-serve {
-         opacity: 1;
-         transform: rotate(0deg) scale(1);
-         }
-         .intercom-lightweight-app-launcher-icon-self-serve svg {
-         height: 44px;
-         }
-         .intercom-lightweight-app-launcher-icon-self-serve svg path {
-         fill: rgb(255, 255, 255);
-         }
-         .intercom-lightweight-app-launcher-custom-icon-open {
-         max-height: 24px;
-         max-width: 24px;
-         opacity: 1;
-         transform: rotate(0deg) scale(1);
-         }
-         .intercom-lightweight-app-launcher-icon-minimize {
-         opacity: 0;
-         transform: rotate(-60deg) scale(0);
-         }
-         .intercom-lightweight-app-launcher-icon-minimize svg path {
-         fill: rgb(255, 255, 255);
-         }
-         .intercom-lightweight-app-messenger {
-         position: fixed;
-         z-index: 2147483003;
-         overflow: hidden;
-         background-color: white;
-         animation: intercom-lightweight-app-messenger 250ms cubic-bezier(0, 1, 1, 1);
-         transform-origin: bottom right;
-         width: 400px;
-         height: calc(100% - 104px);
-         max-height: 704px;
-         min-height: 250px;
-         right: 20px;
-         bottom: 84px;
-         box-shadow: 0 5px 40px rgba(0,0,0,0.16);
-         border-radius: 16px;
-         }
-         .intercom-lightweight-app-messenger-header {
-         height: 64px;
-         border-bottom: none;
-         background: #980105
-         }
-         .intercom-lightweight-app-messenger-footer{
-         position:absolute;
-         bottom:0;
-         width: 100%;
-         height: 80px;
-         background: #fff;
-         font-size: 14px;
-         line-height: 21px;
-         border-top: 1px solid rgba(0, 0, 0, 0.05);
-         box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
-         }
-         @media print {
-         .intercom-lightweight-app {
-         display: none;
-         }
-         }
-
-
-         .menu-v2--show {
-            transform: translateX(0);
-         }
-      </style>
+      @keyframes intercom-lightweight-app-launcher {
+      from {
+      opacity: 0;
+      transform: scale(0.5);
+      }
+      to {
+      opacity: 1;
+      transform: scale(1);
+      }
+      }
+      @keyframes intercom-lightweight-app-gradient {
+      from {
+      opacity: 0;
+      }
+      to {
+      opacity: 1;
+      }
+      }
+      @keyframes intercom-lightweight-app-messenger {
+      0% {
+      opacity: 0;
+      transform: scale(0);
+      }
+      40% {
+      opacity: 1;
+      }
+      100% {
+      transform: scale(1);
+      }
+      }
+      .intercom-lightweight-app {
+      position: fixed;
+      z-index: 2147483001;
+      width: 0;
+      height: 0;
+      font-family: intercom-font, "Helvetica Neue", "Apple Color Emoji", Helvetica, Arial, sans-serif;
+      }
+      .intercom-lightweight-app-gradient {
+      position: fixed;
+      z-index: 2147483002;
+      width: 500px;
+      height: 500px;
+      bottom: 0;
+      right: 0;
+      pointer-events: none;
+      background: radial-gradient(
+      ellipse at bottom right,
+      rgba(29, 39, 54, 0.16) 0%,
+      rgba(29, 39, 54, 0) 72%);
+      animation: intercom-lightweight-app-gradient 200ms ease-out;
+      }
+      .intercom-lightweight-app-launcher {
+      position: fixed;
+      z-index: 2147483003;
+      padding: 0 !important;
+      margin: 0 !important;
+      border: none;
+      bottom: 20px;
+      right: 20px;
+      max-width: 48px;
+      width: 48px;
+      max-height: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #980105;
+      cursor: pointer;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 32px 0 rgba(0, 0, 0, 0.16);
+      transition: transform 167ms cubic-bezier(0.33, 0.00, 0.00, 1.00);
+      box-sizing: content-box;
+      }
+      .intercom-lightweight-app-launcher:hover {
+      transition: transform 250ms cubic-bezier(0.33, 0.00, 0.00, 1.00);
+      transform: scale(1.1)
+      }
+      .intercom-lightweight-app-launcher:active {
+      transform: scale(0.85);
+      transition: transform 134ms cubic-bezier(0.45, 0, 0.2, 1);
+      }
+      .intercom-lightweight-app-launcher:focus {
+      outline: none;
+      }
+      .intercom-lightweight-app-launcher-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 48px;
+      height: 48px;
+      transition: transform 100ms linear, opacity 80ms linear;
+      }
+      .intercom-lightweight-app-launcher-icon-open {
+      opacity: 1;
+      transform: rotate(0deg) scale(1);
+      }
+      .intercom-lightweight-app-launcher-icon-open svg {
+      width: 24px;
+      height: 24px;
+      }
+      .intercom-lightweight-app-launcher-icon-open svg path {
+      fill: rgb(255, 255, 255);
+      }
+      .intercom-lightweight-app-launcher-icon-self-serve {
+      opacity: 1;
+      transform: rotate(0deg) scale(1);
+      }
+      .intercom-lightweight-app-launcher-icon-self-serve svg {
+      height: 44px;
+      }
+      .intercom-lightweight-app-launcher-icon-self-serve svg path {
+      fill: rgb(255, 255, 255);
+      }
+      .intercom-lightweight-app-launcher-custom-icon-open {
+      max-height: 24px;
+      max-width: 24px;
+      opacity: 1;
+      transform: rotate(0deg) scale(1);
+      }
+      .intercom-lightweight-app-launcher-icon-minimize {
+      opacity: 0;
+      transform: rotate(-60deg) scale(0);
+      }
+      .intercom-lightweight-app-launcher-icon-minimize svg path {
+      fill: rgb(255, 255, 255);
+      }
+      .intercom-lightweight-app-messenger {
+      position: fixed;
+      z-index: 2147483003;
+      overflow: hidden;
+      background-color: white;
+      animation: intercom-lightweight-app-messenger 250ms cubic-bezier(0, 1, 1, 1);
+      transform-origin: bottom right;
+      width: 400px;
+      height: calc(100% - 104px);
+      max-height: 704px;
+      min-height: 250px;
+      right: 20px;
+      bottom: 84px;
+      box-shadow: 0 5px 40px rgba(0,0,0,0.16);
+      border-radius: 16px;
+      }
+      .intercom-lightweight-app-messenger-header {
+      height: 64px;
+      border-bottom: none;
+      background: #980105
+      }
+      .intercom-lightweight-app-messenger-footer{
+      position:absolute;
+      bottom:0;
+      width: 100%;
+      height: 80px;
+      background: #fff;
+      font-size: 14px;
+      line-height: 21px;
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+      box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+      }
+      @media print {
+      .intercom-lightweight-app {
+      display: none;
+      }
+      }
+      .menu-v2--show {
+      transform: translateX(0);
+      }
+   </style>
 </head>
 <body>
    <div class="wrapper-v2">
@@ -701,7 +697,7 @@
                </div>
                <!-- End mobile menu -->
                <a class="header-v2__logo" href="/" aria-label="Go to Main page">
-                  <img class="header-v2__logo-img" src="./img/logo.png">
+               <img class="header-v2__logo-img" src="./img/logo.png">
                </a>
                <form class="header-v2__search" action="/en/search">
                   <div class="header-v2__search-wrap field field--search">
@@ -1098,61 +1094,68 @@
                         <a class="nav-v2__link" href="/">Home</a>
                      </li>
                      <li class="nav-v2__item">
-    <a class="nav-v2__link" href="#" onclick="return false;">
-        Search &amp; Bid                            
-        <svg width="8" height="5" aria-hidden="true" focusable="false">
-            <path d="M0 0 L4 4 L8 0 Z" fill="currentColor"></path> <!-- Example path data for a downward arrow -->
-        </svg>
-    </a>
+                        <a class="nav-v2__link" href="#" onclick="return false;">
+                           Search &amp; Bid                            
+                           <svg width="8" height="5" aria-hidden="true" focusable="false">
+                              <path d="M0 0 L4 4 L8 0 Z" fill="currentColor"></path>
+                              <!-- Example path data for a downward arrow -->
+                           </svg>
+                        </a>
                         <div class="nav-v2__sub">
                            <ul class="nav-v2__list-sub">
                               <li class="nav-v2__item-sub nav-v2__item-sub--active" data-sub="1">
-    <span class="nav-v2__link-sub">
-        Featured                                        
-        <svg width="8" height="5" aria-hidden="true" focusable="false">
-            <path d="M0 0 L4 4 L8 0 Z" fill="currentColor"></path> <!-- Example path data for a downward arrow -->
-        </svg>
-    </span>
-</li>
-
+                                 <span class="nav-v2__link-sub">
+                                    Featured                                        
+                                    <svg width="8" height="5" aria-hidden="true" focusable="false">
+                                       <path d="M0 0 L4 4 L8 0 Z" fill="currentColor"></path>
+                                       <!-- Example path data for a downward arrow -->
+                                    </svg>
+                                 </span>
+                              </li>
                               <li class="nav-v2__item-sub nav-v2__item-sub--active" data-sub="2">
                                  <span class="nav-v2__link-sub">
                                     Popular Makes                                        
                                     <svg width="8" height="5" aria-hidden="true" focusable="false">
-            <path d="M0 0 L4 4 L8 0 Z" fill="currentColor"></path> <!-- Example path data for a downward arrow -->
-        </svg>
+                                       <path d="M0 0 L4 4 L8 0 Z" fill="currentColor"></path>
+                                       <!-- Example path data for a downward arrow -->
+                                    </svg>
                                  </span>
                               </li>
                               <li class="nav-v2__item-sub nav-v2__item-sub--active" data-sub="4">
                                  <span class="nav-v2__link-sub">
                                     Vehicle Types                                        
                                     <svg width="8" height="5" aria-hidden="true" focusable="false">
-            <path d="M0 0 L4 4 L8 0 Z" fill="currentColor"></path> <!-- Example path data for a downward arrow -->
-        </svg>
+                                       <path d="M0 0 L4 4 L8 0 Z" fill="currentColor"></path>
+                                       <!-- Example path data for a downward arrow -->
+                                    </svg>
                                  </span>
                               </li>
                               <li class="nav-v2__item-sub nav-v2__item-sub--active" data-sub="5">
                                  <span class="nav-v2__link-sub">
                                     Damage Types                                        
                                     <svg width="8" height="5" aria-hidden="true" focusable="false">
-            <path d="M0 0 L4 4 L8 0 Z" fill="currentColor"></path> <!-- Example path data for a downward arrow -->
-        </svg>
+                                       <path d="M0 0 L4 4 L8 0 Z" fill="currentColor"></path>
+                                       <!-- Example path data for a downward arrow -->
+                                    </svg>
                                  </span>
                               </li>
                               <li class="nav-v2__item-sub nav-v2__item-sub--active" data-sub="6">
                                  <span class="nav-v2__link-sub">
                                     Search by State                                        
                                     <svg width="8" height="5" aria-hidden="true" focusable="false">
-            <path d="M0 0 L4 4 L8 0 Z" fill="currentColor"></path> <!-- Example path data for a downward arrow -->
-        </svg>
+                                       <path d="M0 0 L4 4 L8 0 Z" fill="currentColor"></path>
+                                       <!-- Example path data for a downward arrow -->
+                                    </svg>
                                  </span>
                               </li>
                               <li class="nav-v2__item-sub nav-v2__item-sub--active" data-sub="3">
                                  <span class="nav-v2__link-sub">
                                     Body Styles                                        
                                     <svg width="8" height="5" aria-hidden="true" focusable="false">
-            <path d="M0 0 L4 4 L8 0 Z" fill="currentColor"></path> <!-- Example path data for a downward arrow -->
-        </svg>
+                                       <path d="M0 0 L4 4 L8 0 Z" fill="currentColor">
+                                       </path>
+                                       <!-- Example path data for a downward arrow -->
+                                    </svg>
                                  </span>
                               </li>
                            </ul>
@@ -2390,8 +2393,8 @@
                            <a class="types__link" href="/en/search/type-cars/body-style-hatchback">
                               <div class="types__img types__img--body">
                                  <picture>
-                                    <source type="image/webp" srcset="/img/webp/hatchback@1x.webp 1x, /img/webp/hatchback@2x.webp 2x">
-                                    <img src="/img/body-style/hatchback@1x.png" srcset="/img/body-style/hatchback@2x.png 2x" alt="Body style Hatchback" width="148" height="100">
+                                    <source type="image/webp" srcset="hatchback.png, hatchback.png">
+                                    <img src="hatchback.png" srcset="hatchback.png" alt="Body style Pickup" width="148" height="100">
                                  </picture>
                               </div>
                               <div class="types__title">Hatchback</div>
@@ -2402,8 +2405,8 @@
                            <a class="types__link" href="/en/search/type-cars/body-style-station_wagon">
                               <div class="types__img types__img--body">
                                  <picture>
-                                    <source type="image/webp" srcset="/img/webp/station-wagon@1x.webp 1x, /img/webp/station-wagon@2x.webp 2x">
-                                    <img src="/img/body-style/station-wagon@1x.png" srcset="/img/body-style/station-wagon@2x.png 2x" alt="Body style Station Wagon" width="148" height="100">
+                                    <source type="image/webp" srcset="Station.png, Station.png">
+                                    <img src="Station.png" srcset="Station.png" alt="Body style Pickup" width="148" height="100">
                                  </picture>
                               </div>
                               <div class="types__title">Station Wagon</div>
@@ -2414,8 +2417,8 @@
                            <a class="types__link" href="/en/search/type-cars/body-style-van">
                               <div class="types__img types__img--body">
                                  <picture>
-                                    <source type="image/webp" srcset="/img/webp/cargo@1x.webp 1x, /img/webp/cargo@2x.webp 2x">
-                                    <img src="/img/body-style/cargo@1x.png" srcset="/img/body-style/cargo@2x.png 2x" alt="Body style Cargo Van" width="148" height="100">
+                                    <source type="image/webp" srcset="cargo.png, cargo.png">
+                                    <img src="cargo.png" srcset="cargo.png" alt="Body style Pickup" width="148" height="100">
                                  </picture>
                               </div>
                               <div class="types__title">Cargo Van</div>
@@ -2426,8 +2429,8 @@
                            <a class="types__link" href="/en/search/type-cars/body-style-limousine">
                               <div class="types__img types__img--body">
                                  <picture>
-                                    <source type="image/webp" srcset="/img/webp/limousine@1x.webp 1x, /img/webp/limousine@2x.webp 2x">
-                                    <img src="/img/body-style/limousine@1x.png" srcset="/img/body-style/limousine@2x.png 2x" alt="Body style Limousine" width="148" height="100">
+                                    <source type="image/webp" srcset="Limousine.png, Limousine.png">
+                                    <img src="Limousine.png" srcset="Limousine.png" alt="Body style Pickup" width="148" height="100">
                                  </picture>
                               </div>
                               <div class="types__title">Limousine</div>
@@ -2874,36 +2877,36 @@
                      <ul class="types__list view-more__content">
                         <li class="types__item">
                            <a class="types__link" href="/en/search/type-recreation-vehicle">
-                            <div class="types__img types__img--vehicle">
-                                <img src="cars.png" alt="Car Icon" width="68" height="68">
-                            </div>
+                              <div class="types__img types__img--vehicle">
+                                 <img src="cars.png" alt="Car Icon" width="68" height="68">
+                              </div>
                               <div class="types__title">Cars</div>
                               <span class="types__qty">391,913</span>
                            </a>
                         </li>
                         <li class="types__item">
                            <a class="types__link" href="/en/search/type-recreation-vehicle">
-                               <div class="types__img types__img--vehicle">
-                                <img src="RVs.png" alt="RVs Icon" width="68" height="68">
-                            </div>
+                              <div class="types__img types__img--vehicle">
+                                 <img src="RVs.png" alt="RVs Icon" width="68" height="68">
+                              </div>
                               <div class="types__title">RVs</div>
                               <span class="types__qty">2,424</span>
                            </a>
                         </li>
                         <li class="types__item">
                            <a class="types__link" href="/en/search/type-motorcycle">
-                               <div class="types__img types__img--vehicle">
-                                <img src="Motorcycles.png" alt="Motorcycles Icon" width="68" height="68">
-                            </div>
+                              <div class="types__img types__img--vehicle">
+                                 <img src="Motorcycles.png" alt="Motorcycles Icon" width="68" height="68">
+                              </div>
                               <div class="types__title">Motorcycles</div>
                               <span class="types__qty">10,477</span>
                            </a>
                         </li>
                         <li class="types__item">
                            <a class="types__link" href="/en/search/type-truck">
-                               <div class="types__img types__img--vehicle">
+                              <div class="types__img types__img--vehicle">
                                  <img src="Trucks.png" alt="Trucks Icon" width="68" height="68">
-                               </div>
+                              </div>
                               <div class="types__title">Trucks</div>
                               <span class="types__qty">8,495</span>
                            </a>
@@ -2912,7 +2915,7 @@
                            <a class="types__link" href="/en/search/type-bus">
                               <div class="types__img types__img--vehicle">
                                  <img src="Buses.png" alt="Buses Icon" width="68" height="68">
-                               </div>
+                              </div>
                               <div class="types__title">Buses</div>
                               <span class="types__qty">177</span>
                            </a>
@@ -2921,7 +2924,7 @@
                            <a class="types__link" href="/en/search/type-boats">
                               <div class="types__img types__img--vehicle">
                                  <img src="Boats.png" alt="Boats Icon" width="68" height="68">
-                               </div>
+                              </div>
                               <div class="types__title">Boats</div>
                               <span class="types__qty">1,054</span>
                            </a>
@@ -2930,7 +2933,7 @@
                            <a class="types__link" href="/en/search/type-trailers">
                               <div class="types__img types__img--vehicle">
                                  <img src="Trailers.png" alt="Trailers Icon" width="68" height="68">
-                               </div>
+                              </div>
                               <div class="types__title">Trailers</div>
                               <span class="types__qty">2,284</span>
                            </a>
@@ -2982,7 +2985,7 @@
                      </ul>
                   </div>
                   <div class="view-more__btn-wrap">
-                     <button class="btn-reset view-more__btn view-more__btn--more" type="button" fdprocessedid="96v3za">
+                     <button id="viewMoreBtn" class="btn-reset view-more__btn view-more__btn--more" type="button">
                         View All Vehicle Types                    
                         <svg width="12" height="7" aria-hidden="true" focusable="false">
                            <use xlink:href="/img/sprite_auto.svg#arrow-thin-icon"></use>
@@ -3468,7 +3471,7 @@
                         <li>
                            <div class="register-features__top">
                               <div class="register-features__img">
-                                  <img src="find.png" alt="Search Icon" style="width: 32px; height: 32px;">
+                                 <img src="find.png" alt="Search Icon" style="width: 32px; height: 32px;">
                               </div>
                               <div>
                                  <p class="register-features__step-num">Step 2</p>
@@ -3482,7 +3485,7 @@
                         <li>
                            <div class="register-features__top">
                               <div class="register-features__img">
-                                  <img src="bid.png" alt="Search Icon" style="width: 32px; height: 32px;">
+                                 <img src="bid.png" alt="Search Icon" style="width: 32px; height: 32px;">
                               </div>
                               <div>
                                  <p class="register-features__step-num">Step 3</p>
@@ -4067,170 +4070,162 @@
                   </div>
                </div>
                <div class="footer-v2__dropdowns">
-                 <div class="lang dropdown-v2 dropdown-v2--up dropdown-v2--panel footer-v2__dropdown">
-                   <label id="footerLangLabel" class="v-h">Change language</label>
-                   <button class="btn-reset btn-v2 btn-v2--square lang__btn lang__btn--en dropdown-v2__btn dropdown-v2__btn--lang" type="button" aria-labelledby="footerLangLabel" aria-controls="footerLangContent" aria-expanded="false" fdprocessedid="sq95wh" onclick="toggleDropdown()">
-                     <span class="v-h">selected</span>
-                     <span class="lang__btn-text">English</span>
-                     <img src="America's flag.png" alt="USA Flag" style="margin-left:-38px; margin-top: -20px;">
-                     <svg width="8" height="5" aria-hidden="true" focusable="false">
-                       <path d="M0 0 L4 4 L8 0 Z" fill="currentColor"></path>
-                     </svg>
-                   </button>
-                   <div id="footerLangContent" class="dropdown-v2__content dropdown-v2__content--lang" role="listbox">
-                     <ul class="lang__list">
-                       <li class="lang__item" role="option">
-                         <a class="lang__link lang__link--es" href="/es">Spanish</a>
-                         <img src="Spanish.png" alt="USA Flag" style="margin-left:-7px; margin-top: -20px;">
-                       </li>
-                       <li class="lang__item" role="option">
-                         <a class="lang__link lang__link--ru" href="/ru">Russian</a>
-                         <img src="russian.png" alt="USA Flag" style="margin-left:-7px; margin-top: -20px;">
-                       </li>
-                       <li class="lang__item" role="option">
-                         <a class="lang__link lang__link--pl" href="/pl">Polish</a>
-                         <img src="Polish.png" alt="USA Flag" style="margin-left:-7px; margin-top: -20px;">
-                       </li>
-                     </ul>
-                     <button class="btn-reset dropdown-v2__close" type="button" aria-label="Close"></button>
-                   </div>
-                 </div>
-               </div>
-               </div>
-            </div>
-            <div class="footer-v2__bottom">
-               <p class="footer-v2__contacts"><a href="tel:+13022060015">+1 (302) 206-0015</a> | <a href="tel:+18883647184">(888) 364-7184</a> | <a href="mailto:support@sca.auction">support@sca.auction</a> | 15173B NE 21st Ave, North Miami Beach, FL 33162, United States</p>
-               <p class="footer-v2__copyright">
-                  Copyright © 2015-2024 SCA, LLC. SCA Auctions and SCA Auction logo are registered to SCA, LLC. All Rights Reserved. All other logos, brands and designated trademarks are the property of their respective holders. Use of this website requires acceptance of the <a href="/en/privacy-policy">Privacy Policy</a>, <a href="/en/terms-of-use">Website Terms of Use</a> and <a href="/en/terms-and-conditions">Member Terms &amp; Conditions</a>. <a href="https://sca.auction/en/site-map">Sitemap</a>. SCA, LLC is not owned by or affiliated with IAA, Inc. All vehicles are purchased from SCA Auctions, not <a href="https://www.iaai.com/">IAAI</a>.            
-               </p>
-                                                          <img src="visa.png" alt="USA Flag">
-
-               <ul class="footer-v2__payments">
-                  <li class="footer-v2__payments-item">
-                     <svg width="35" height="36" aria-hidden="true" focusable="false">
-                        <use xlink:href="/img/sprite_auto.svg#visa-bw-icon"></use>
-                     </svg>
-                  </li>
-                  <li class="footer-v2__payments-item">
-                     <svg width="28" height="36" aria-hidden="true" focusable="false">
-                        <use xlink:href="/img/sprite_auto.svg#master-card-bw-icon"></use>
-                     </svg>
-                  </li>
-                  <li class="footer-v2__payments-item">
-                     <svg width="44" height="36" aria-hidden="true" focusable="false">
-                        <use xlink:href="/img/sprite_auto.svg#discover-bw-icon"></use>
-                     </svg>
-                  </li>
-                  <li class="footer-v2__payments-item">
-                     <svg width="35" height="36" aria-hidden="true" focusable="false">
-                        <use xlink:href="/img/sprite_auto.svg#amex-bw-icon"></use>
-                     </svg>
-                  </li>
-
-               </ul>
-            </div>
-         </div>
-      </footer>
-     <button id="backToTopBtn" class="btn-reset back-to-top back-to-top--show" type="button" aria-label="Go to the top of the page">
-          <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
-              <path d="M12 2l-10 10h6v10h8v-10h6l-10-10z"/>
-          </svg>
-      </button>
-
-      <!-- <div class="cookies active">
-         <div class="container-v2">
-            <div class="cookies__text-wrap">
-               <p class="cookies__text">We use cookies to analyse &amp; personalise content</p>
-               <button class="btn-reset cookies__close cookie_save" type="button" aria-label="Close" fdprocessedid="fcc9f">
-                  <svg width="18" height="18" aria-hidden="true" focusable="false">
-                     <use xlink:href="/img/sprite_auto.svg#close-icon"></use>
-                  </svg>
-               </button>
-            </div>
-            <div class="cookies__actions">
-               <button class="btn-reset cookies__extra-info" type="button" data-modal="cookies" fdprocessedid="03o3r">
-               <span class="mobile" aria-label="Find out more how we use cookies">?</span>
-               <span class="desktop">Find out more how we use cookies</span>
-               </button>
-               <button class="btn-reset btn-v2 btn-v2--brand cookies__accept cookie_save" type="button" fdprocessedid="hsf6tb">Got It</button>
-            </div>
-         </div>
-      </div> -->
-      <section class="modal-v2 modal-v2--cookies cookies-modal">
-         <div class="modal-v2__wrap">
-            <div class="modal-v2__content" role="dialog" aria-modal="true">
-               <div class="cookies-modal__swipe-handle">
-                  <div class="swipe-handle" aria-label="Close"></div>
-               </div>
-               <div class="cookies-modal__info">
-                  <div class="cookies-modal__title-wrap">
-                     <h2 class="title-v2 cookies-modal__title">Insurance Auto Auctions Near You</h2>
-                     <button class="btn-reset modal-v2__close-btn" type="button" aria-label="Close">
-                        <svg width="12" height="12" aria-hidden="true" focusable="false">
-                           <use xlink:href="/img/sprite_auto.svg#close-icon"></use>
+                  <div class="lang dropdown-v2 dropdown-v2--up dropdown-v2--panel footer-v2__dropdown">
+                     <label id="footerLangLabel" class="v-h">Change language</label>
+                     <button class="btn-reset btn-v2 btn-v2--square lang__btn lang__btn--en dropdown-v2__btn dropdown-v2__btn--lang" type="button" aria-labelledby="footerLangLabel" aria-controls="footerLangContent" aria-expanded="false" fdprocessedid="sq95wh" onclick="toggleDropdown()">
+                        <span class="v-h">selected</span>
+                        <span class="lang__btn-text">English</span>
+                        <img src="America's flag.png" alt="USA Flag" style="margin-left:-38px; margin-top: -20px;">
+                        <svg width="8" height="5" aria-hidden="true" focusable="false">
+                           <path d="M0 0 L4 4 L8 0 Z" fill="currentColor"></path>
                         </svg>
                      </button>
-                  </div>
-                  <div class="cookies-tabs">
-                     <div class="cookies-tabs__head">
-                        <div class="cookies-tabs__list" role="tablist">
-                           <button id="cookiesPrivicyTab" class="btn-reset tabs-btn tabs-btn--active" type="button" role="tab" aria-selected="true" aria-controls="cookiesPrivicyPanel">Your Privacy</button>
-                           <button id="cookiesNecessaryTab" class="btn-reset tabs-btn" type="button" role="tab" aria-selected="false" aria-controls="cookiesNecessaryPanel" tabindex="-1">Strictly Necessary Cookies</button>
-                           <button id="cookiesTargetingTab" class="btn-reset tabs-btn" type="button" role="tab" aria-selected="false" aria-controls="cookiesTargetingPanel" tabindex="-1">Targeting Cookies</button>
-                        </div>
-                     </div>
-                     <div id="cookiesPrivicyPanel" class="tabs-panel" role="tabpanel" aria-labelledby="cookiesPrivicyTab">
-                        <p class="cookies-tabs__title">Your Privacy</p>
-                        <div class="cookies-tabs__content">
-                           <p>When you visit any web site, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalised web experience.</p>
-                           <p>Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer.</p>
-                        </div>
-                     </div>
-                     <div id="cookiesNecessaryPanel" class="tabs-panel tabs-panel--hidden" role="tabpanel" aria-labelledby="cookiesNecessaryTab">
-                        <p class="cookies-tabs__title">Strictly Necessary Cookies</p>
-                        <div class="cookies-tabs__content">
-                           <p>These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms.</p>
-                           <p>You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.</p>
-                        </div>
-                     </div>
-                     <div id="cookiesTargetingPanel" class="tabs-panel tabs-panel--hidden" role="tabpanel" aria-labelledby="cookiesTargetingTab">
-                        <div class="cookies-tabs__switch">
-                           <p class="cookies-tabs__title">Targeting Cookies</p>
-                           <div class="cookies-tabs__switch-text">
-                              <p class="switch-btn-text active">
-                                 <span class="not-active">Not active</span>
-                                 <span class="active">Active</span>
-                              </p>
-                              <div class="switch-btn">
-                                 <input id="activeCookies" class="switch-btn__input cookies-tabs__switch-input v-h" type="checkbox" name="active-cookies" checked="">
-                                 <label class="switch-btn__label" for="activeCookies"></label>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cookies-tabs__content">
-                           <p>These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites.</p>
-                           <p>They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.</p>
-                        </div>
+                     <div id="footerLangContent" class="dropdown-v2__content dropdown-v2__content--lang" role="listbox">
+                        <ul class="lang__list">
+                           <li class="lang__item" role="option">
+                              <a class="lang__link lang__link--es" href="/es">Spanish</a>
+                              <img src="Spanish.png" alt="USA Flag" style="margin-left:-7px; margin-top: -20px;">
+                           </li>
+                           <li class="lang__item" role="option">
+                              <a class="lang__link lang__link--ru" href="/ru">Russian</a>
+                              <img src="russian.png" alt="USA Flag" style="margin-left:-7px; margin-top: -20px;">
+                           </li>
+                           <li class="lang__item" role="option">
+                              <a class="lang__link lang__link--pl" href="/pl">Polish</a>
+                              <img src="Polish.png" alt="USA Flag" style="margin-left:-7px; margin-top: -20px;">
+                           </li>
+                        </ul>
+                        <button class="btn-reset dropdown-v2__close" type="button" aria-label="Close"></button>
                      </div>
                   </div>
-               </div>
-               <div class="cookies-modal__bottom">
-                  <button class="btn-reset btn-v2 btn-v2--brand cookies-modal__save cookie_save">Save Search</button>
                </div>
             </div>
          </div>
-      </section>
+         <div class="footer-v2__bottom">
+            <p class="footer-v2__contacts"><a href="tel:+13022060015">+1 (302) 206-0015</a> | <a href="tel:+18883647184">(888) 364-7184</a> | <a href="mailto:support@sca.auction">support@sca.auction</a> | 15173B NE 21st Ave, North Miami Beach, FL 33162, United States</p>
+            <p class="footer-v2__copyright">
+               Copyright © 2015-2024 SCA, LLC. SCA Auctions and SCA Auction logo are registered to SCA, LLC. All Rights Reserved. All other logos, brands and designated trademarks are the property of their respective holders. Use of this website requires acceptance of the <a href="/en/privacy-policy">Privacy Policy</a>, <a href="/en/terms-of-use">Website Terms of Use</a> and <a href="/en/terms-and-conditions">Member Terms &amp; Conditions</a>. <a href="https://sca.auction/en/site-map">Sitemap</a>. SCA, LLC is not owned by or affiliated with IAA, Inc. All vehicles are purchased from SCA Auctions, not <a href="https://www.iaai.com/">IAAI</a>.            
+            </p>
+            <img src="visa.png" alt="USA Flag">
+            <ul class="footer-v2__payments">
+               <li class="footer-v2__payments-item">
+                  <svg width="35" height="36" aria-hidden="true" focusable="false">
+                     <use xlink:href="/img/sprite_auto.svg#visa-bw-icon"></use>
+                  </svg>
+               </li>
+               <li class="footer-v2__payments-item">
+                  <svg width="28" height="36" aria-hidden="true" focusable="false">
+                     <use xlink:href="/img/sprite_auto.svg#master-card-bw-icon"></use>
+                  </svg>
+               </li>
+               <li class="footer-v2__payments-item">
+                  <svg width="44" height="36" aria-hidden="true" focusable="false">
+                     <use xlink:href="/img/sprite_auto.svg#discover-bw-icon"></use>
+                  </svg>
+               </li>
+               <li class="footer-v2__payments-item">
+                  <svg width="35" height="36" aria-hidden="true" focusable="false">
+                     <use xlink:href="/img/sprite_auto.svg#amex-bw-icon"></use>
+                  </svg>
+               </li>
+            </ul>
+         </div>
    </div>
-   
- 
+   </footer>
+   <button id="backToTopBtn" class="btn-reset back-to-top back-to-top--show" type="button" aria-label="Go to the top of the page">
+      <svg width="24" height="24" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+         <path d="M12 2l-10 10h6v10h8v-10h6l-10-10z"/>
+      </svg>
+   </button>
+   <!-- <div class="cookies active">
+      <div class="container-v2">
+         <div class="cookies__text-wrap">
+            <p class="cookies__text">We use cookies to analyse &amp; personalise content</p>
+            <button class="btn-reset cookies__close cookie_save" type="button" aria-label="Close" fdprocessedid="fcc9f">
+               <svg width="18" height="18" aria-hidden="true" focusable="false">
+                  <use xlink:href="/img/sprite_auto.svg#close-icon"></use>
+               </svg>
+            </button>
+         </div>
+         <div class="cookies__actions">
+            <button class="btn-reset cookies__extra-info" type="button" data-modal="cookies" fdprocessedid="03o3r">
+            <span class="mobile" aria-label="Find out more how we use cookies">?</span>
+            <span class="desktop">Find out more how we use cookies</span>
+            </button>
+            <button class="btn-reset btn-v2 btn-v2--brand cookies__accept cookie_save" type="button" fdprocessedid="hsf6tb">Got It</button>
+         </div>
+      </div>
+      </div> -->
+   <section class="modal-v2 modal-v2--cookies cookies-modal">
+      <div class="modal-v2__wrap">
+         <div class="modal-v2__content" role="dialog" aria-modal="true">
+            <div class="cookies-modal__swipe-handle">
+               <div class="swipe-handle" aria-label="Close"></div>
+            </div>
+            <div class="cookies-modal__info">
+               <div class="cookies-modal__title-wrap">
+                  <h2 class="title-v2 cookies-modal__title">Insurance Auto Auctions Near You</h2>
+                  <button class="btn-reset modal-v2__close-btn" type="button" aria-label="Close">
+                     <svg width="12" height="12" aria-hidden="true" focusable="false">
+                        <use xlink:href="/img/sprite_auto.svg#close-icon"></use>
+                     </svg>
+                  </button>
+               </div>
+               <div class="cookies-tabs">
+                  <div class="cookies-tabs__head">
+                     <div class="cookies-tabs__list" role="tablist">
+                        <button id="cookiesPrivicyTab" class="btn-reset tabs-btn tabs-btn--active" type="button" role="tab" aria-selected="true" aria-controls="cookiesPrivicyPanel">Your Privacy</button>
+                        <button id="cookiesNecessaryTab" class="btn-reset tabs-btn" type="button" role="tab" aria-selected="false" aria-controls="cookiesNecessaryPanel" tabindex="-1">Strictly Necessary Cookies</button>
+                        <button id="cookiesTargetingTab" class="btn-reset tabs-btn" type="button" role="tab" aria-selected="false" aria-controls="cookiesTargetingPanel" tabindex="-1">Targeting Cookies</button>
+                     </div>
+                  </div>
+                  <div id="cookiesPrivicyPanel" class="tabs-panel" role="tabpanel" aria-labelledby="cookiesPrivicyTab">
+                     <p class="cookies-tabs__title">Your Privacy</p>
+                     <div class="cookies-tabs__content">
+                        <p>When you visit any web site, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalised web experience.</p>
+                        <p>Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer.</p>
+                     </div>
+                  </div>
+                  <div id="cookiesNecessaryPanel" class="tabs-panel tabs-panel--hidden" role="tabpanel" aria-labelledby="cookiesNecessaryTab">
+                     <p class="cookies-tabs__title">Strictly Necessary Cookies</p>
+                     <div class="cookies-tabs__content">
+                        <p>These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms.</p>
+                        <p>You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.</p>
+                     </div>
+                  </div>
+                  <div id="cookiesTargetingPanel" class="tabs-panel tabs-panel--hidden" role="tabpanel" aria-labelledby="cookiesTargetingTab">
+                     <div class="cookies-tabs__switch">
+                        <p class="cookies-tabs__title">Targeting Cookies</p>
+                        <div class="cookies-tabs__switch-text">
+                           <p class="switch-btn-text active">
+                              <span class="not-active">Not active</span>
+                              <span class="active">Active</span>
+                           </p>
+                           <div class="switch-btn">
+                              <input id="activeCookies" class="switch-btn__input cookies-tabs__switch-input v-h" type="checkbox" name="active-cookies" checked="">
+                              <label class="switch-btn__label" for="activeCookies"></label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="cookies-tabs__content">
+                        <p>These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites.</p>
+                        <p>They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="cookies-modal__bottom">
+               <button class="btn-reset btn-v2 btn-v2--brand cookies-modal__save cookie_save">Save Search</button>
+            </div>
+         </div>
+      </div>
+   </section>
+   </div>
    <div id="g_id_onload" data-client_id="378983349856-j0dl5tnsatc5rl7n2hgv4vf0rnh3glk1.apps.googleusercontent.com" data-itp_support="true" data-context="signin" data-callback="handleCredentialResponse"></div>
    <div class="gsignin-form"></div>
    <span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span>
-
    <div id="batBeacon533164778705" style="width: 0px; height: 0px; display: none; visibility: hidden;"><img id="batBeacon667060086770" width="0" height="0" alt="" src="https://bat.bing.com/action/0?ti=136024666&amp;tm=gtm002&amp;Ver=2&amp;mid=4066ad2f-eb1e-43d9-a9f7-fecc7de70a01&amp;sid=56cee630238611ef9016a5ec218e081b&amp;vid=56cf2fe0238611efb547dd841c02d1de&amp;vids=1&amp;msclkid=N&amp;gtm_tag_source=1&amp;uach=pv%3D10.0.0&amp;pi=918639831&amp;lg=en-US&amp;sw=1366&amp;sh=768&amp;sc=24&amp;tl=Insurance%20Auto%20Auction%20Online%20%26%20Public%20-%20SCA&amp;p=https%3A%2F%2Fsca.auction%2F&amp;r=&amp;lt=2701&amp;evt=pageLoad&amp;sv=1&amp;rn=23841" style="width: 0px; height: 0px; display: none; visibility: hidden;"></div>
-   
    <div class="intercom-lightweight-app">
-      
       <div class="intercom-lightweight-app-launcher intercom-launcher" role="button" tabindex="0" aria-label="Open Intercom Messenger" aria-live="polite" fdprocessedid="xpl6yf">
          <div class="intercom-lightweight-app-launcher-icon intercom-lightweight-app-launcher-icon-open">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32">
@@ -4251,110 +4246,99 @@
          $(".btn-menu").click(function() {
             $(".menu-v2--main").addClass("menu-v2--show")
             $(".wrapper-v2").addClass("overlay")
-
+      
             $("body").addClass("scroll-lock")
          })
-
-
+      
+      
          $(".menu-v2__close").click(function() {
             $(".menu-v2--main").removeClass("menu-v2--show")
             $(".wrapper-v2").removeClass("overlay")
             $("body").removeClass("scroll-lock")
-
+      
          })
-
-
+      
+      
          // $(document).on("click", ".overlay", function() {
          //    $(".menu-v2--main").removeClass("menu-v2--show")
          //    $(".wrapper-v2").removeClass("overlay")
          // })
-
+      
       })
    </script>
-  <script type="text/javascript">
-    // Dummy function definition for s()
-    function s() {
-        console.log("Function s called");
-    }
-
-    // Example definition for i as a NodeList of elements
-    var i = document.querySelectorAll('.nav-v2__level');
-
-    function activateSubMenu(t) {
-        s();
-
-        i.forEach(function(e) {
-            e.classList.remove("nav-v2__level--show");
-            if (t.dataset.sub === e.dataset.level) {
-                e.classList.add("nav-v2__level--show");
-            }
-        });
-
-        t.classList.add("nav-v2__item-sub--active");
-    }
-
-    function deactivateSubMenu(t) {
-        s();
-
-        i.forEach(function(e) {
-            e.classList.remove("nav-v2__level--show");
-            if (t.dataset.sub === e.dataset.level) {
-                e.classList.add("nav-v2__level--show");
-            }
-        });
-
-        t.classList.add("nav-v2__item-sub--active");
-    }
-
-    // Adding event listeners to all sub menu items
-    document.querySelectorAll('.nav-v2__item-sub').forEach(function(subMenuItem) {
-        subMenuItem.addEventListener('mouseenter', function() {
-            activateSubMenu(subMenuItem);
-        });
-
-        subMenuItem.addEventListener('mouseleave', function() {
-            deactivateSubMenu(subMenuItem);
-        });
-    });
-
-</script>
-
-<script>
-  function toggleDropdown() {
-    var dropdownContent = document.getElementById("footerLangContent");
-    dropdownContent.classList.toggle("show");
-  }
-</script>
    <script type="text/javascript">
-    window.onscroll = function() {
-        scrollFunction();
-    };
-
-    function scrollFunction() {
-        var backToTopBtn = document.getElementById("backToTopBtn");
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            backToTopBtn.classList.add("back-to-top--show");
-        } else {
-            backToTopBtn.classList.remove("back-to-top--show");
-        }
-    }
-
-    // وظيفة للتمرير إلى الأعلى عند الضغط على الزر
-    document.getElementById("backToTopBtn").onclick = function() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    };
-</script>
-
- 
-
-
-
-
-
-
-
+      // Dummy function definition for s()
+      function s() {
+          console.log("Function s called");
+      }
+      
+      // Example definition for i as a NodeList of elements
+      var i = document.querySelectorAll('.nav-v2__level');
+      
+      function activateSubMenu(t) {
+          s();
+      
+          i.forEach(function(e) {
+              e.classList.remove("nav-v2__level--show");
+              if (t.dataset.sub === e.dataset.level) {
+                  e.classList.add("nav-v2__level--show");
+              }
+          });
+      
+          t.classList.add("nav-v2__item-sub--active");
+      }
+      
+      function deactivateSubMenu(t) {
+          s();
+      
+          i.forEach(function(e) {
+              e.classList.remove("nav-v2__level--show");
+              if (t.dataset.sub === e.dataset.level) {
+                  e.classList.add("nav-v2__level--show");
+              }
+          });
+      
+          t.classList.add("nav-v2__item-sub--active");
+      }
+      
+      // Adding event listeners to all sub menu items
+      document.querySelectorAll('.nav-v2__item-sub').forEach(function(subMenuItem) {
+          subMenuItem.addEventListener('mouseenter', function() {
+              activateSubMenu(subMenuItem);
+          });
+      
+          subMenuItem.addEventListener('mouseleave', function() {
+              deactivateSubMenu(subMenuItem);
+          });
+      });
+      
+   </script>
+   <script>
+      function toggleDropdown() {
+        var dropdownContent = document.getElementById("footerLangContent");
+        dropdownContent.classList.toggle("show");
+      }
+   </script>
+   <script type="text/javascript">
+      window.onscroll = function() {
+          scrollFunction();
+      };
+      
+      function scrollFunction() {
+          var backToTopBtn = document.getElementById("backToTopBtn");
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              backToTopBtn.classList.add("back-to-top--show");
+          } else {
+              backToTopBtn.classList.remove("back-to-top--show");
+          }
+      }
+      
+      document.getElementById("backToTopBtn").onclick = function() {
+          window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+          });
+      };
+   </script>
 </body>
 </html>
