@@ -13,4 +13,11 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     .d-sm-block {
         display: block !important;
     }
+
+
+.how-it-works .bg-box {
+    background-image: url(../images/banners/how-it-works-box.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0 1.75rem 1.85rem 1.75rem;
 }
